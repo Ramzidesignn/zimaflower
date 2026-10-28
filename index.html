@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>زیما فلاور — گل، همین امروز | شیراز</title>
+<meta name="description" content="گل‌فروشی زیما در شیراز؛ دسته‌گلت را از موجودی بساز، ارسال همان روز، کارت پیام صوتی، عکس واقعی گل قبل از ارسال و یادآور مناسبت‌ها.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- icon sprite (stroke 1.5, 24 grid) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="8" r="2.2"/><path d="M12 5.8c0-2.5 3-2.5 3 0M12 5.8c0-2.5-3-2.5-3 0M14.2 8c2.5 0 2.5 3 0 3M9.8 8c-2.5 0-2.5 3 0 3M12 10.2V21M12 16c-2-2-5-2-6-1 1 2 4 2 6 1zM12 14c2-2 5-2 6-1-1 2-4 2-6 1z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 8h4l2-3h6l2 3h4v11H3z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 8h4a2 2 0 0 1 0 4h-4h4.5a2 2 0 0 1 0 4h-4.5zM11 6.5v1.5M11 16v1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M4 5l8 16 8-16zM4 5c3 2 13 2 16 0"/></symbol>
+    <symbol id="i-ribbon" viewBox="0 0 24 24"><path d="M12 11c-3-4-8-4-8-1s5 3 8 1zm0 0c3-4 8-4 8-1s-5 3-8 1zm0 0l-4 9m4-9l4 9"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></symbol>
+  </defs>
+</svg>
+
+<div class="rush" role="status">
+  <svg class="ic"><use href="#i-clock"/></svg>
+  <span>عجله دارید؟ تا <b id="cd">--:--:--</b> دیگر سفارش بدهید، <b id="cdDay">امروز</b> در شیراز می‌رسد.</span>
+</div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="#" class="logo" aria-label="زیما فلاور"><img src="img/logo.jpg" alt="لوگوی زیما فلاور" width="36" height="36"><span>zima</span></a>
+    <nav class="nav__links" aria-label="منوی اصلی">
+      <a href="#build">بساز</a><a href="#shop">آماده</a><a href="#voice">کارت صوتی</a><a href="#proof">عکس واقعی</a><a href="#remind">یادآور</a>
+    </nav>
+    <a href="#build" class="nav__cart" aria-label="سبد خرید"><svg class="ic"><use href="#i-bag"/></svg><span id="cartN">۰</span></a>
+  </div>
+</header>
+
+<main>
+<!-- HERO + FINDER -->
+<section class="hero">
+  <div class="wrap g12">
+    <div class="hero__text">
+      <p class="eyebrow"><svg class="ic"><use href="#i-pin"/></svg> گل زیما · شیراز، زرگری</p>
+      <h1 class="hero__title">گل،<br><em>همین امروز.</em></h1>
+      <form class="finder" id="finder" onsubmit="return false">
+        <span>می‌خواهم برای</span>
+        <select id="fWho" aria-label="گیرنده"><option>مادرم</option><option>همسرم</option><option>دوستم</option><option>همکارم</option><option>خودم</option></select>
+        <span>به مناسبت</span>
+        <select id="fWhy" aria-label="مناسبت"><option value="birthday">تولد</option><option value="love">عاشقانه</option><option value="sorry">عذرخواهی</option><option value="congrats">تبریک</option><option value="nothing">بی‌بهانه</option><option value="condolence">تسلیت</option></select>
+        <span>با حدود</span>
+        <select id="fBudget" aria-label="بودجه"><option value="1">تا ۱ میلیون</option><option value="2" selected>۱ تا ۳ میلیون</option><option value="3">بیشتر از ۳ میلیون</option></select>
+        <span>گل بفرستم.</span>
+      </form>
+      <div class="hero__cta">
+        <a href="#build" class="btn btn--ink"><svg class="ic"><use href="#i-flower"/></svg>دسته‌گلم را خودم می‌سازم</a>
+        <a href="#shop" class="btn btn--line">مدل‌های آماده<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <figure class="hero__img"><img src="img/p15.jpg" alt="دسته‌گل یاسی و بنفش زیما در گلدان شیشه‌ای" width="330" height="440"></figure>
+  </div>
+  <div class="wrap"><div class="finder__out" id="finderOut" aria-live="polite"></div></div>
+</section>
+
+<!-- USP -->
+<ul class="usp wrap" aria-label="مزیت‌ها">
+  <li><svg class="ic"><use href="#i-truck"/></svg><b>ارسال همان روز</b><small>سفارش تا ساعت ۱۹</small></li>
+  <li><svg class="ic"><use href="#i-camera"/></svg><b>عکس واقعی گل</b><small>قبل از ارسال</small></li>
+  <li><svg class="ic"><use href="#i-mic"/></svg><b>کارت پیام صوتی</b><small>با کد QR</small></li>
+  <li><svg class="ic"><use href="#i-coin"/></svg><b>پرداخت رمزارز</b><small>و درگاه ریالی</small></li>
+</ul>
+
+<!-- 01 BUILDER -->
+<section class="build" id="build">
+  <div class="wrap">
+    <header class="head">
+      <span class="num">۰۱</span>
+      <h2>دسته‌گلت را<br><em>خودت بچین.</em></h2>
+      <p>مثل وقتی که در مغازه کنار گلفروش ایستاده‌ای: گل‌ها را از موجودی امروز انتخاب کن، کاغذ و روبان و تزئین را بردار و سفارش بده.</p>
+    </header>
+
+    <div class="builder g12">
+      <div class="builder__steps">
+        <div class="tabs" role="tablist" aria-label="مراحل ساخت">
+          <button role="tab" aria-selected="true" data-s="0"><svg class="ic"><use href="#i-flower"/></svg>گل‌ها</button>
+          <button role="tab" aria-selected="false" data-s="1"><svg class="ic"><use href="#i-paper"/></svg>کاغذ</button>
+          <button role="tab" aria-selected="false" data-s="2"><svg class="ic"><use href="#i-ribbon"/></svg>روبان و تزئین</button>
+          <button role="tab" aria-selected="false" data-s="3"><svg class="ic"><use href="#i-card"/></svg>کارت</button>
+        </div>
+
+        <div class="panel" role="tabpanel" data-p="0">
+          <p class="panel__hint">موجودی امروز مغازه · ساقه‌ای</p>
+          <ul class="stock" id="stock"></ul>
+        </div>
+        <div class="panel" role="tabpanel" data-p="1" hidden>
+          <p class="panel__hint">کاغذ و بسته‌بندی</p>
+          <div class="swatches" id="papers"></div>
+        </div>
+        <div class="panel" role="tabpanel" data-p="2" hidden>
+          <p class="panel__hint">روبان</p>
+          <div class="swatches" id="ribbons"></div>
+          <p class="panel__hint">تزئین</p>
+          <div class="chips" id="extras"></div>
+        </div>
+        <div class="panel" role="tabpanel" data-p="3" hidden>
+          <p class="panel__hint">کارت همراه گل</p>
+          <div class="chips" id="cards"></div>
+          <label class="field"><span>متن کارت</span><textarea id="cardText" rows="3" maxlength="160" placeholder="مثلاً: تولدت مبارک، مامان جان"></textarea></label>
+        </div>
+      </div>
+
+      <aside class="summary" aria-label="دسته‌گل شما">
+        <svg class="bq" id="bq" viewBox="0 0 240 280" role="img" aria-label="پیش‌نمایش دسته‌گل"></svg>
+        <ul class="summary__list" id="sumList"></ul>
+        <div class="summary__total"><span>جمع (نمونه)</span><b id="sumTotal">۰</b></div>
+        <button class="btn btn--blue btn--block" id="orderBtn" disabled><svg class="ic"><use href="#i-bag"/></svg>ثبت سفارش</button>
+        <small class="summary__note"><svg class="ic"><use href="#i-camera"/></svg>قبل از ارسال، عکس همین دسته‌گل را برایت می‌فرستیم.</small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SHOP -->
+<section class="shop" id="shop">
+  <div class="wrap">
+    <header class="head">
+      <span class="num">۰۲</span>
+      <h2>مدل‌های آماده</h2>
+      <p>اگر فرصت چیدن نداری، این‌ها همین حالا آماده‌ی ارسال‌اند.</p>
+    </header>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- 03 SAME DAY -->
+<section class="sameday">
+  <div class="wrap">
+    <header class="head">
+      <span class="num">۰۳</span>
+      <h2>ساعت را <em>شما</em> انتخاب کنید.</h2>
+      <p>هر بازه‌ای که حداقل دو ساعت تا شروعش مانده، امروز قابل انتخاب است.</p>
+    </header>
+    <div class="slots" role="radiogroup" aria-label="بازه‌ی تحویل" id="slots"></div>
+    <p class="sameday__note" id="slotNote"></p>
+  </div>
+</section>
+
+<!-- 04 VOICE CARD -->
+<section class="voice" id="voice">
+  <div class="wrap g12">
+    <div class="voice__text">
+      <header class="head head--stack">
+        <span class="num">۰۴</span>
+        <h2>حرفی که روی کاغذ<br>جا نمی‌شود.</h2>
+        <p>پیامتان را ضبط کنید. روی کارت گل یک QR چاپ می‌شود؛ گیرنده آن را اسکن می‌کند و صدای شما را می‌شنود.</p>
+      </header>
+      <div class="rec">
+        <button class="rec__btn" id="recBtn" type="button" aria-pressed="false" aria-label="ضبط پیام"><svg class="ic"><use href="#i-mic"/></svg></button>
+        <div><b id="recState">برای ضبط بزنید</b><small id="recTime">حداکثر ۶۰ ثانیه · صدا یا ویدیو</small></div>
+      </div>
+    </div>
+    <div class="card3d" aria-label="پیش‌نمایش کارت">
+      <div class="card3d__face">
+        <span class="card3d__brand">zima</span>
+        <p id="cardMsg">برای مادرم،<br>به مناسبت تولد.</p>
+        <svg class="qr" viewBox="0 0 21 21" id="qr" role="img" aria-label="کد QR نمونه"></svg>
+        <small><svg class="ic"><use href="#i-mic"/></svg>اسکن کنید و بشنوید</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PROOF -->
+<section class="proof" id="proof">
+  <div class="wrap">
+    <header class="head">
+      <span class="num">۰۵</span>
+      <h2>همان گلی که دیدید،<br>همان گلی که رسید.</h2>
+      <p>هر سفارش دو عکس واقعی دارد: یکی قبل از ارسال و یکی لحظه‌ی تحویل.</p>
+    </header>
+    <ol class="track">
+      <li class="done"><svg class="ic"><use href="#i-check"/></svg><span>۱۰:۱۲</span><b>سفارش ثبت شد</b></li>
+      <li class="done"><svg class="ic"><use href="#i-camera"/></svg><span>۱۱:۴۰</span><b>عکس گل آماده</b><img src="img/p20.jpg" alt="عکس واقعی دسته‌گل قبل از ارسال" loading="lazy"></li>
+      <li class="done"><svg class="ic"><use href="#i-truck"/></svg><span>۱۲:۰۵</span><b>در مسیر</b></li>
+      <li class="now"><svg class="ic"><use href="#i-pin"/></svg><span>۱۲:۳۸</span><b>تحویل شد</b><img src="img/p14.jpg" alt="عکس لحظه‌ی تحویل گل" loading="lazy"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 06 REMINDER -->
+<section class="remind" id="remind">
+  <div class="wrap">
+    <header class="head">
+      <span class="num">۰۶</span>
+      <h2>هیچ تولدی را<br><em>فراموش نکنید.</em></h2>
+      <p>تاریخ را یک بار بدهید. سه روز قبل، با یک پیامک یادتان می‌اندازیم.</p>
+    </header>
+    <form class="remind__form" id="remForm">
+      <svg class="ic"><use href="#i-bell"/></svg>
+      <input id="rName" placeholder="برای چه کسی؟ مثلاً مادرم" required aria-label="نام">
+      <select id="rDay" aria-label="روز"></select>
+      <select id="rMonth" aria-label="ماه"></select>
+      <button type="submit" class="btn btn--ink">یادم بینداز</button>
+    </form>
+    <ul class="remind__list" id="remList"></ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__big">zima</div>
+    <div class="foot__cols">
+      <p><svg class="ic"><use href="#i-pin"/></svg>شیراز، زرگری، بین کوچه ۳ و ۵</p>
+      <p><svg class="ic"><use href="#i-phone"/></svg><a href="tel:09170090023">۰۹۱۷۰۰۹۰۰۲۳</a> · <a href="tel:09174270023">۰۹۱۷۴۲۷۰۰۲۳</a></p>
+      <p><svg class="ic"><use href="#i-insta"/></svg><a href="https://www.instagram.com/zimaflower/" target="_blank" rel="noopener">zimaflower</a> · <a href="https://www.instagram.com/zimaflower.wedding/" target="_blank" rel="noopener">گل عروس</a></p>
+    </div>
+    <p class="credit">Created by <a href="https://ara-vision.ir/" target="_blank" rel="noopener">AraVision</a></p>
+  </div>
+</footer>
+
+<!-- checkout -->
+<dialog class="checkout" id="checkout" aria-labelledby="coTitle">
+  <form method="dialog" id="coForm">
+    <header><h3 id="coTitle">تکمیل سفارش</h3><button value="cancel" class="x" aria-label="بستن" formnovalidate><svg class="ic"><use href="#i-x"/></svg></button></header>
+    <div id="coBody">
+      <ul class="co__list" id="coList"></ul>
+      <label class="field"><span>نام گیرنده</span><input required autocomplete="name"></label>
+      <label class="field"><span>موبایل گیرنده</span><input required inputmode="tel" pattern="[0-9۰-۹]{11}" placeholder="۰۹۱۲۳۴۵۶۷۸۹"></label>
+      <label class="field"><span>آدرس در شیراز</span><input required autocomplete="street-address"></label>
+      <label class="field"><span>بازه‌ی تحویل</span><select id="coSlot"></select></label>
+      <div class="co__total"><span>مبلغ قابل پرداخت (نمونه)</span><b id="coTotal"></b></div>
+      <button class="btn btn--blue btn--block" id="coPay" value="pay"><svg class="ic"><use href="#i-check"/></svg>پرداخت و ثبت</button>
+      <small class="summary__note">پیش‌نمایش است؛ پرداختی انجام نمی‌شود.</small>
+    </div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
